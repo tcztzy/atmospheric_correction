@@ -1,0 +1,2 @@
+# pkl files should be binary and should not be modified.
+*.pkl binary
