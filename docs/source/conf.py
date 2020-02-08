@@ -17,16 +17,16 @@ import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
 user_pass = 'a', 'b'
-with open('../../SIAC/data/.earthdata_auth', 'wb') as f:
+with open('../../zac/data/.earthdata_auth', 'wb') as f:
     for i in user_pass:                                                                                                                       
         f.write((i+'\n').encode())
-import SIAC
-with open('../../SIAC/data/.earthdata_auth', 'wb') as f:
+import zac
+with open('../../zac/data/.earthdata_auth', 'wb') as f:
      f.write(('').encode())
 
 # -- Project information -----------------------------------------------------
 
-project = 'SIAC'
+project = 'zac'
 copyright = '2018, Feng Yin'
 author = 'Feng Yin'
 
@@ -118,7 +118,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'SIACdoc'
+htmlhelp_basename = 'zacdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -145,7 +145,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'SIAC.tex', 'SIAC Documentation',
+    (master_doc, 'zac.tex', 'zac Documentation',
      'Feng Yin', 'manual'),
 ]
 
@@ -155,7 +155,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'siac', 'SIAC Documentation',
+    (master_doc, 'zac', 'zac Documentation',
      [author], 1)
 ]
 
@@ -166,8 +166,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'SIAC', 'SIAC Documentation',
-     author, 'SIAC', 'One line description of project.',
+    (master_doc, 'zac', 'zac Documentation',
+     author, 'zac', 'One line description of project.',
      'Miscellaneous'),
 ]
 

@@ -1,9 +1,9 @@
-.. SIAC documentation master file, created by
+.. zac documentation master file, created by
    sphinx-quickstart on Thu Nov  8 18:01:40 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MULTIPLY - Sensor Invariant Atmospheric Correction (SIAC)
+MULTIPLY - Sensor Invariant Atmospheric Correction (zac)
 =========================================================
 
 This atmospheric correction method uses MODIS MCD43 BRDF product to get
@@ -19,7 +19,7 @@ built under Bayesian theory and the uncertainty is propagated through
 the whole system. Since we do not rely on specific bands' relationship
 to estimate the atmospheric states, but instead a more generic and
 consistent way of inversion those parameters. The code can be downloaded
-from `SIAC <https://github.com/MarcYin/Atmospheric_correction>`__ github
+from `zac <https://github.com/MarcYin/Atmospheric_correction>`__ github
 directly and futrher updates will make it more independent and can be
 installed on different machines.
 

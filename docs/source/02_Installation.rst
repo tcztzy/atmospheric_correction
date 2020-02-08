@@ -11,13 +11,13 @@ You can download the source code from the `project website <https://github.com/m
 --------------
 ::
 
-    pip install SIAC
+    pip install zac
 
 3. Using anaconda
 -----------------
 ::  
 
-  conda install -c f0xy -c conda-forge siac
+  conda install -c f0xy -c conda-forge zac
 
 4. From code repository for developing
 --------------------------------------

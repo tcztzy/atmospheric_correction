@@ -1,4 +1,4 @@
-SIAC
+zac
 ****************************
 
 Introduction
@@ -12,7 +12,7 @@ uncertainty information from different data source. It takes advantage of the hi
 MODIS observations to get BRDF description of the earth surface as the prior information of the earth 
 surface property, uses the ECMWF CAMS Near-real-time as the prior information of the atmospheric sates, 
 to get optimal estimations of the atmospheric parameters. The code is written in python and we have tested 
-it with Sentinel 2, Landsat 8, Landsat 5, Sentinel 3 and MODIS data and it shows SIAC can correct the 
+it with Sentinel 2, Landsat 8, Landsat 5, Sentinel 3 and MODIS data and it shows zac can correct the 
 atmospheric effects reasonablely well.
 
 Sentinel 2 and Landsat 8 correction examples

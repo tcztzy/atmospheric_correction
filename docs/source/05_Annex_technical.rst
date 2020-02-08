@@ -1,20 +1,20 @@
 Technical documentation
 =======================
 
-`SIAC_S2`
+`zac_s2`
 --------------
 
-.. automodule:: SIAC.SIAC_S2
-   :members: SIAC_S2
+.. automodule:: zac.zac_s2
+   :members: zac_s2
    :noindex:
    :undoc-members:
    :show-inheritance:
 
-`SIAC_L8`
+`zac_l8`
 --------------
 
-.. automodule:: SIAC.SIAC_L8
-   :members: SIAC_L8
+.. automodule:: zac.zac_l8
+   :members: zac_l8
    :noindex:
    :undoc-members:
    :show-inheritance:
@@ -22,7 +22,7 @@ Technical documentation
 `Atmospheric parameters Inversion`
 ----------------------------------
 
-.. automodule:: SIAC.the_aerosol
+.. automodule:: zac.the_aerosol
    :members: solve_aerosol
    :noindex:     
    :undoc-members:
@@ -31,7 +31,7 @@ Technical documentation
 `Atmospheric parameters Solver`
 -------------------------------
 
-.. automodule:: SIAC.atmo_solver
+.. automodule:: zac.atmo_solver
    :members: solving_atmo_paras
    :noindex:
    :undoc-members:
@@ -40,7 +40,7 @@ Technical documentation
 `Atmospheric correction`
 ------------------------
 
-.. automodule:: SIAC.the_correction
+.. automodule:: zac.the_correction
    :members: atmospheric_correction   
    :noindex:     
    :undoc-members:
