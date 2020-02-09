@@ -10,4 +10,5 @@
 zac.egg-info
 *.o
 *.a
-/zac/util/l8_angles*
+/zac/l8/util/l8_angles*
+/.vscode/

@@ -1,13 +1,14 @@
-#/usr/bin/env python
+# /usr/bin/env python
 import os
 from glob import glob
-from zac.l8_angle import do_l8_angle
+from zac.l8.angle import do_l8_angle
+
 
 def l8_pre_processing(l8_dir):
     metafiles = []
-    for (dirpath, dirnames, filenames)  in os.walk(l8_dir):
-        if len(filenames)>0:
-            temp = [dirpath + '/' + i for i in filenames]
+    for (dirpath, dirnames, filenames) in os.walk(l8_dir):
+        if len(filenames) > 0:
+            temp = [dirpath + "/" + i for i in filenames]
             for j in temp:
                 if 'mtl.' in j.lower():
                     metafiles.append(os.path.realpath(j))

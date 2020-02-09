@@ -12,7 +12,7 @@ from zac import HOME, DEFAULT_MCD43_DIR, DEFAULT_MCD43_VRT_DIR
 from zac.create_logger import create_logger
 from zac.downloaders import downloader
 from zac.get_MCD43 import get_mcd43
-from zac.l8_preprocessing import l8_pre_processing
+from zac.l8.preprocessing import l8_pre_processing
 from zac.multi_process import parmap
 from zac.the_aerosol import solve_aerosol
 from zac.the_correction import atmospheric_correction
@@ -117,8 +117,8 @@ def do_correction(
         ref_off=off,
         global_dem=global_dem,
         cams_dir=cams_dir,
-        spec_m_dir=os.path.join(file_path, "spectral_mapping", ""),
-        emus_dir=os.path.join(file_path, "emus", ""),
+        spec_m_dir=os.path.join(os.path.dirname(file_path), "spectral_mapping", ""),
+        emus_dir=os.path.join(os.path.dirname(file_path), "emus", ""),
         mcd43_dir=vrt_dir,
     )
     aero._solving()
