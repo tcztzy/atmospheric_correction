@@ -8,3 +8,6 @@
 *S2?_MSIL1C*.SAFE
 .coverage*
 zac.egg-info
+*.o
+*.a
+/zac/util/l8_angles*

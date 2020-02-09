@@ -1,11 +1,17 @@
 import os
 import logging
-file_path = os.path.dirname(os.path.realpath(__file__))                                                                                                                                                                 
-version_file = file_path + '/VERSION'
-with open(version_file, 'rb') as f:
-    version = f.read().decode().strip()
+from importlib.metadata import version, PackageNotFoundError
+
+try:
+    __version__ = version(__package__)
+except PackageNotFoundError:
+    # package is not installed
+    __version__ = 'unknown'
+
+
+
 def create_logger(fname = None):
-    logger = logging.getLogger('zac-V%s'%version)
+    logger = logging.getLogger('zac-%s' % __version__)
     logger.setLevel(logging.INFO)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     if not logger.handlers:
